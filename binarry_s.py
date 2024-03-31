@@ -43,20 +43,63 @@
 #     return tartibsiz_list
 # print(buble_sort([2,4,5,6,1]))
 
-# a=[1,2,3,4,5,6,7,8]
-# b=[8,7,6,5,4,3,2,1]
-# def f(x,m,n):
+# a=[-4,-3,2,4,8,10,15]
+# def f(x,n):
 #     d=[]
-#     c=[]
+#     b=[]
+#     s=[]
+#     c=0
 #     for i in x:
-#         for j in m:
-#             if i*j==n:
-#                 d.append(i)
-#                 c.append(j)
-#     return d,c ,n
+#         d.append(i)
+#         for j in d:
+#             if i+j==n:
+#                 b.append(j)
+#                 s.append(i)
+#     return  b,s
+# n=5
+# print(f(a,n))
 
-    
-# n=24
-# print(f(a,b,n))
+# def f(x):
+#     if len(x)<=140 and x[0] == '#':    
+#         a = x.title()
+#         b = a.replace(' ', '')
+#         return b
+#     else:
+#         return False
+# print(f('# Hello world salom dunyo'))
+
+
+
+# count = 0
+# file = open('main.txt', 'r')
+# reader = file.read()
+# for i in reader.split():
+#     count+=1
+
+# print(count)
+# file.close()
+
+
+def teskari(list1):
+    juft = []
+    toq = []
+    for i in list1:
+        if i > 9 and i%2==0:
+            juft.append(int(str(i)[::-1]))
+        else:
+            toq.append(int(str(i)))
+
+    x = juft + toq
+    y = len(juft + toq)    
+
+    for a in range(y):
+        for j in range(0, y-1):
+            if x[j] > x[j+1]:
+                x[j], x[j+1] = x[j+1], x[j]
+    return x
+
+
+print(teskari([1,21,48,21,48,56,789]))
+
 
 

@@ -33,12 +33,30 @@
 
 # print(binary_search(998, numbers))
 
-def buble_sort(tartibsiz_list):
-    n = len(tartibsiz_list)
+# def buble_sort(tartibsiz_list):
+#     n = len(tartibsiz_list)
 
-    for i in range(n):
-        for j in range(0, n-1):
-            if tartibsiz_list[j] < tartibsiz_list[j+1]:
-                tartibsiz_list[j+1], tartibsiz_list[j] = tartibsiz_list[j], tartibsiz_list[j+1] 
-    return tartibsiz_list
-print(buble_sort([2,4,5,6,1]))
+#     for i in range(n):
+#         for j in range(0, n-1):
+#             if tartibsiz_list[j] < tartibsiz_list[j+1]:
+#                 tartibsiz_list[j+1], tartibsiz_list[j] = tartibsiz_list[j], tartibsiz_list[j+1] 
+#     return tartibsiz_list
+# print(buble_sort([2,4,5,6,1]))
+
+# a=[1,2,3,4,5,6,7,8]
+# b=[8,7,6,5,4,3,2,1]
+# def f(x,m,n):
+#     d=[]
+#     c=[]
+#     for i in x:
+#         for j in m:
+#             if i*j==n:
+#                 d.append(i)
+#                 c.append(j)
+#     return d,c ,n
+
+    
+# n=24
+# print(f(a,b,n))
+
+
